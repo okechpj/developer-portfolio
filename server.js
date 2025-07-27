@@ -6,7 +6,9 @@ const PORT = process.env.PORT || 3000;
 
 const UserRoutes = require('./routers/UserRoutes');
 const ProjectRoutes = require('./routers/ProjectRoutes');
-const authRoutes = require('./authentication/registration');
+
+const authRoutes = require('./authentication/authController');
+
 
 app.use(express.json());
 app.use('/api/developers', UserRoutes);
